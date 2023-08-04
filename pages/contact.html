@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <script src="https://kit.fontawesome.com/f22559516b.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../css/animations.css">
+
+    //leaflet
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+ integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+ crossorigin=""></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="h-sec" id="hSec">
+                <div class="logo-sec">
+                    <div class="logo mt">
+                        <h1> Renjo<span>Linah</span> </h1>
+                    </div>
+                    <i class="fa-solid fa-bars menu-icon pointer"></i>
+                </div>
+                <nav class="mt">
+                    <ul>
+                        <li><a href="../index.html" class="pointer">Home</a> </li>
+                        <li><a href="./menu.html" class="pointer">menu</a> </li>
+                        <li><a href="./about.html" class="pointer">About</a> </li>
+                        <li><a href="./events.html" class="pointer">Events</a> </li>
+                        <li><a href="./gallery.html" class="pointer">gallery</a> </li>
+                        <li><a href="./contact.html" class="pointer">contact  us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="sub-header reveal">
+            <div class="media-icons">
+                <i class="fa-brands fa-square-facebook  pointer"></i>
+                <i class="fa-brands fa-instagram  pointer"></i>
+                <i class="fa-brands fa-tiktok  pointer"></i>
+                <i class="fa-brands fa-square-pinterest  pointer"></i>
+            </div>
+            <div class="phone-sec">
+                <i class="fa-solid fa-phone"></i>
+                <strong>+254 000 000000</strong>
+            </div>
+        </div>
+        <div class="con-container">
+            <div class="contact-title letter-spacing reveal">contact</div>
+            <div class="box mt">
+                <section class="left-sec">
+                  <div id="map"></div> 
+                </section>
+                <section class="right-sec ">
+                    <form class="reveal" action="https://formsubmit.co/maryanmaxamuudsabriye@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://maryan121.github.io/restaurant-web/pages/thankspage">
+                        <input type="hidden" name="_subject" value="from the restaurant contact page!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <label for="name" >name</label>
+                        <input type="text" name="name">
+                        <label for="email" >email</label>
+                        <input type="email" name="email">
+                        <textarea name="message" id="message"></textarea>
+                        <div class="question ">
+                            <label for="question">* have you tasted our dishes?</label>
+                            <input type="radio" value="yes" name="tried our dishes">
+                            <label >yes</label>
+                            <input type="radio" value="no" name="tried our dishes">
+                            <label >no</label>
+                        </div>
+                        
+                       
+                        <button type="submit" class="pointer" style="cursor: pointer;">submit</button>
+                    </form>
+                    <div class="form-background">
+                        <img  src="../images-contact/bg.jpg" alt="">
+                    </div>
+                </section>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="../code/common.js"></script>
+    <script src="../code/map.js"></script>
+    <script src="../code/animations.js"></script>
+</body>
+</html>
